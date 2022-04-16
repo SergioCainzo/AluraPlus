@@ -3,6 +3,7 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --fonte-principal: 'inter';
 }
 
 * {
@@ -13,12 +14,17 @@
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .principal {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -33,6 +39,8 @@ body{
     padding: 1em;
     color: var(--branco-principal);
     display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
 }
 
 .botao_secundario {
@@ -45,4 +53,90 @@ body{
     font-size: 12px;
     text-align: center;
     margin: 8px;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 3em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+/* Inicio do CSS do rodapé */
+.rodape{
+    text-align: center;
+}
+
+.rodape__logo{
+    margin: 5em;
+}
+
+.rodape__link {
+    display: inline;
+    margin: 0.3em;
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__copyright{
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    text-align: center;
+    margin: 5em;
 }
