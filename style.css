@@ -4,6 +4,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'inter';
+    --botao-azul-efeito: #75b0f8;
 }
 
 * {
@@ -41,6 +42,11 @@ body{
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: black;
 }
 
 .botao_secundario {
@@ -124,15 +130,17 @@ body{
 }
 
 .rodape__logo{
-    margin: 5em;
+    margin: 3em;
 }
 
-.rodape__link {
-    display: inline;
-    margin: 0.3em;
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
 
-.rodape__link a{
+.rodape__link a {
+    margin: 0.5em;
     text-decoration: none;
     color: var(--branco-principal);
 }
@@ -142,4 +150,12 @@ body{
     color: var(--cinza-secundario);
     text-align: center;
     margin: 5em;
+}
+
+.rodape__link a:hover{
+    color: var(--cinza-secundario);
+}
+
+.rodape__link a:active {
+    color: aqua;
 }
